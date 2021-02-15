@@ -1,0 +1,270 @@
+/* This is for whole website*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* This is for whole body of the website*/
+body {
+	background-color:#000000;
+	
+
+}
+
+
+/*This one is for wrapper*/
+.wrapper{
+	margin: 0px auto 10px 60px;
+	width: 80%px;
+	height: auto;
+
+
+
+}
+
+/* This is for the whole header or navigation of the website*/
+nav{
+	width: 100%;
+	height: 100px;
+	background-color: #393e46;
+
+}
+
+/* This is to style un order list*/
+ul{
+
+    margin-left:100px;
+
+
+
+}
+/* This is to style list item under unorder list*/
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 90px;
+    font-size: 18px;
+
+ 
+
+	
+}
+
+
+/* This is to style a a tag under list item under unorder list*/
+ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: :18px;
+	color: #fff;
+	padding: 0px 40px;	
+	position: center;
+	transition: 0.5s;
+
+    
+
+
+
+}
+/* This is to hover a tag under list item under unorder list*/
+ul li a:hover{
+	transform: scale(1.5);
+	opacity: 1;
+
+	
+	color: #0cc2f0;
+	
+
+}
+/* This is to set a img length and background image*/
+	img{
+	width: 90%;
+	height: 800px;
+	border: 5px solid black;
+	margin: 40px;
+	background-image: url('../image/ba.jpg');
+	
+     
+}
+
+}
+/* This is for the image slider*/
+#slider{
+	width: 100%;
+	height: 700px;
+	
+	box-shadow: :0px 0px 5px 2px #ccc;
+	
+	margin: 20px auto;
+
+}
+/* This is for the logo */
+.logo{
+
+	text-decoration: none;
+	display: block;
+	font-size: 20px;
+	padding: 0px 00px;
+	color: black;
+	background-color:#black;
+}
+/* This is desgin the next button */
+ .next{
+        	font-size: 20px;
+        	}
+ /* This is desgin the previous button */
+.prew{
+        font-size: 15px;
+        padding-right: 30px;
+        text-align: center;
+        }
+.button1a{
+	font-size: 40px;
+	color: black;
+	padding: 10px;
+	text-align: center;
+	margin: 20px;
+
+
+}
+.button1a:hover{
+	transform: scale(1.2);
+	opacity: 1;
+	color:black;
+
+
+}
+.Font1{
+	text-align: center;
+	font-size: 25px;
+}
+
+
+.shopnow1{
+	text-align: center;
+	background-color: none;
+	color: #fff
+
+
+}
+.get {
+	color: white;
+	text-align: center;
+    
+
+}
+.image1{
+	height: 1000px;
+}
+
+
+
+#popup{
+	display:none;
+ 	background:#efefef; 
+ 	border:1px solid black; 
+	 width:100%; height:500px;
+	}
+
+.name{
+
+	color: white;
+	text-align: center;
+	height: 100px;
+	
+	
+}
+.name1{
+	position: relative;
+	margin: 40px;
+	font-size: 50px;
+}
+.special{
+	font-size: 20px;
+	color: white;
+	text-align: center;;
+	height: 100px;
+}
+.Specialclass{
+	height: 400px;
+	width: 30%
+	}
+.phto1{
+	color: white;
+	width: 100%;
+	margin-right: : 10px;
+	}
+.bluee{
+	color: white;
+}
+/* This is for wrapper of the website*/
+.wrapper1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+  height: 500px;
+}
+/* This is for heading of the wrapper*/
+.wrapper1 h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+/* This is for heading of the wrapper*/
+.wrapper1 .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper1 .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper1 textarea{
+  resize: none;
+  height: 200px;
+  width: 100%
+}
+
+.wrapper1 .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+footer{
+background-color: black;
+height: 10px;
+text-decoration:none;
+}
+

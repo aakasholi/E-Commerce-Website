@@ -1,0 +1,143 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>Guitar Store </title>
+	<meta charset="utf-8">
+	<meta name =" Guitar store" content="Best guitar store in the Nepal" />
+	<meta name ="Guitar" content="Siganture Guitars"/>
+	<meta name="Aakash " content="Guitar" />
+	<link rel="stylesheet"  href="css/style.css">
+	<link rel="icon" href="image/logo.jpg">
+	<!-- for log o top of the screen-->
+	
+</head>
+<body>
+<header>
+
+	<nav>
+	
+<div class="wrapper">
+	<!-- for navigation  of the screen-->
+
+	<ul>
+	<div style="position: relative; right: 90px;top: 35px;">
+		<a href="index.html" class="logo">GForce Guitar </a></div>
+
+    <li><a href="index.html">Home</a></li>
+	<li><a href="pages/Products.html">Products</a></li>
+	<li><a href="pages/Blog.html">Blog</a></li>
+	<li><a href="pages/Research.html">Research</a></li>
+	<li><a href="pages/Contact.html">Contact Us</a></li>
+</ul>
+
+
+	
+</nav>
+
+ 	
+<!-- For the image slider-->
+  <div class='slider'>
+	<div id='img'>
+
+		<img class="img" src="image/slider/a.png" alt="Metallica concert" >
+	</div>
+</div>
+
+<!-- for button for next image and pervious image-->
+</header>
+<div class="button1">
+	<div class="button1a">
+	<button class="button1a" onclick="prewImage()"> Previous </button>
+    <button class="button1a" onclick="nextImage()"> Next  </button>
+    </div>
+</div>
+ <br><br>
+
+ <!-- for another image-->
+<div class="wrapper">
+	<div class="get">
+		<h1>Get your dream Guitar</h1>
+	</div>
+	<!-- After clicking this we will be head toward prodcuts page-->
+	<div class="image1">
+		<img src="image/shopnow.jpg">
+		<div class="shopnow1">
+			<a href="pages/Products.html">
+			<button class="button1a" > Shop now  </button></a>
+		</div>
+		
+	</div>
+	
+	</div>
+	<br><br><br><br>
+</a>
+
+<!-- for the footer of the page-->
+<footer>
+	<table width="100%">
+		<tr>
+		<th>
+		<div id="anotherPage" style="color:white;font-family:Courier New;">
+		<h1 style="color: white;">Opening Hours<br>
+		 <br>
+		 10:00 AM  to 10:00 PM on Regular Days <br>
+		 07:00 AM  to 10:00 PM  on Weekends
+		<br><br>
+	    Location - Kamaladi, Kathmandu
+
+	  </h1>
+		<p>&copy; Oli and Brothers'</p>
+		</div>
+		</th>
+		</tr>
+		</table>
+		</footer>
+            
+
+
+<!-- for java script-->
+<script>
+
+  	var imgs = document.getElementById('img');
+
+  	// contain images in an array
+    var image = ['b','c', 'd', 'a'];
+
+    var i = image.length;
+
+ // function for next slide
+      function nextImage(){
+    	if (i<image.length) {
+    		i= i+1;
+    	}else{
+    		i = 1;
+    	}
+    	  imgs.innerHTML = "<img src=image/slider/"+image[i-1]+".png>";
+    }
+
+
+    // function for prew slide
+
+    function prewImage(){
+
+    	if (i<image.length+1 && i>1) {
+    		i= i-1;
+    	}else{
+    		i = image.length;
+    	}
+    	  imgs.innerHTML = "<img src=image/slider/"+image[i-1]+".png>";
+
+
+    }
+    //interval time of the image
+setInterval(nextImage , 3000);
+
+    
+
+
+  </script>
+
+
+
+</body>
+</html>

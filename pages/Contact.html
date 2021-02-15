@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact us </title>
+	<meta charset="utf-8">
+  <meta name =" Guitar store" content="Best guitar store in the Nepal" />
+  <meta name ="Guitar" content="Siganture Guitars"/>
+  <meta name="Aakash " content="Guitar" />
+  <!--exxternal  css-->
+	<link rel="stylesheet"  href="../css/style.css">
+	<link rel="icon" href="../image/logo.jpg">
+	<!-- for logo top of the screen-->
+	
+</head>
+<body>
+  <!-- inline css -->
+<style type="text/css">
+  img{
+    width: 64px;
+    height: 64px;
+  }
+</style>
+
+<nav><!-- making navigation-->
+<div class="wrapper">
+	<ul>
+    <!-- for internal css -->
+	<div style="position: relative;right: 90px;top: 35px;">
+	<a href="../index.html" class="logo">GForce Guitar </a></div>
+    <li><a href="../index.html">Home</a></li>
+	<li><a href="Products.html">Products</a></li>
+	<li><a href="Blog.html">Blog</a></li>
+	<li><a href="Research.html">Research</a></li>
+	<li><a href="Contact.html">Contact Us </a></li>
+</ul>
+</div>
+
+	
+</nav><!-- for internal css -->
+<div style="padding: 10px;float: right;"><!-- click here and go to facebook -->
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=13&cad=rja&uact=8&ved=2ahUKEwiR8oiboKrkAhW27XMBHUxjDTEQFjAMegQIARAB&url=https%3A%2F%2Fwww.facebook.com%2F&usg=AOvVaw2q27ov2cpCynr72DmuSqEz"><img src="../image/fb.jpg"></a><!-- fb image-->
+<!-- click here and go to twitter -->
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjEn7_4oarkAhWb8HMBHaviC7cQFjAAegQICBAC&url=https%3A%2F%2Ftwitter.com%2F%3Flang%3Den&usg=AOvVaw1Sd3B-_cNZOLSmhw9z2lOm"><img src="../image/twitter.png"></a><!-- twitter image-->
+<!-- click here and go to instagram -->
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwiHvbS-oarkAhWBILcAHW0NCrcQFjAAegQIBxAC&url=https%3A%2F%2Fwww.instagram.com%2F&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm"><img src="../image/insta.jpg"></a><!-- instagram image-->
+</div>
+
+<div class="wrapper1"><!-- making wrapper -->
+  <!-- For form -->
+  <h2>Contact us</h2>
+  <!-- showing error here -->
+  <div id="error_message"></div>
+  <form id="myform" onsubmit="return validate();">
+    <!-- For name -->
+    <div class="input_field">
+        <input type="text" placeholder="Name" id="name">
+    </div>
+    <!-- for subject-->
+    <div class="input_field">
+        <input type="text" placeholder="Subject" id="subject">
+    </div>
+    <!-- for phone no-->
+    <div class="input_field">
+        <input type="text" placeholder="Phone" id="phone">
+    </div>
+    <!-- for email-->
+    <div class="input_field">
+        <input type="text" placeholder="Email" id="email">
+    </div>
+    <!-- for message-->
+    <div class="input_field">
+        <textarea placeholder="Message" id="message"></textarea>
+    </div>
+    <!-- for submmit button-->
+    <div class="btn">
+        <input type="submit">
+    </div>
+  </form>
+<br><br><br>
+<!-- for footer-->
+<footer>
+
+  <table width="100%">
+    <tr>
+    <th><!-- for internal css -->
+    <div id="anotherPage" style="color:white;font-family:Courier New;">
+    <h1 style="color: white;">Opening Hours<br>
+     <br>
+     10:00 AM to 10:00 PM on Regular Days <br>
+     07:00 AM  to 10:00 PM  on Weekends
+    <br><br>
+      Location - Kamaladi, Kathmandu
+
+    </h1>
+    <p>&copy; Oli and Brothers'</p>
+    </div>
+    </th>
+    </tr>
+    </table>
+    </footer>
+    </div>
+    <!-- for java script-->
+<script type="text/javascript">
+  //for form
+	function validate(){
+  var name = document.getElementById("name").value;
+  var subject = document.getElementById("subject").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var error_message = document.getElementById("error_message");
+  
+  error_message.style.padding = "10px";
+  //require for name
+  var text;
+  if(name.length < 5){
+    text = "Please Enter valid Name";
+    error_message.innerHTML = text;
+    return false;
+  }
+  //require for subject
+  if(subject.length < 10){
+    text = "Please Enter Correct Subject";
+    error_message.innerHTML = text;
+    return false;
+  }
+  //require for phone
+  if(isNaN(phone) || phone.length != 10){
+    text = "Please Enter valid Phone Number";
+    error_message.innerHTML = text;
+    return false;
+  }
+  //for email address
+  if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Please Enter valid Email";
+    error_message.innerHTML = text;
+    return false;
+  }
+  //for message
+  if(message.length <= 50){
+    text = "Please Enter More Than 140 Characters";
+    error_message.innerHTML = text;
+    return false;
+  }
+  //after all get true
+  alert("Form Submitted Successfully!");
+  return true;
+}
+</script>
+</div>
+
+
+</body>
+</html>
